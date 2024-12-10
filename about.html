@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Mí</title>
+    <title>Perfil</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -23,6 +23,7 @@
             background: white;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
         img {
             max-width: 200px;
@@ -37,17 +38,33 @@
         a:hover {
             text-decoration: underline;
         }
+        .boton {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .boton:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Sobre Mí</h1>
+        <h1>Perfil</h1>
     </header>
     <section>
         <img src="img/FOTO PERFIL CV.jpg" alt="Foto de Carlos">
         <h2>Hola, soy Carlos</h2>
         <p>Graduado en Administración y Dirección de Empresas con un máster en Big Data y Data Analytics. Apasionado por la gestión empresarial, los datos y la tecnología.</p>
-        <p>Conecta conmigo en <a href="https://www.linkedin.com/in/carloscapilla/" target="_blank">LinkedIn</a>.</p>
+        <p>Conecta conmigo en <a href="https://www.linkedin.com/in/tuusuario/" target="_blank">LinkedIn</a>.</p>
+        <a href="index.html" class="boton">Volver a Inicio</a>
     </section>
 </body>
 </html>
