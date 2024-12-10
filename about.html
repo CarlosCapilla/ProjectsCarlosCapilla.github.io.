@@ -5,66 +5,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil</title>
     <style>
+        /* General */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            color: #333;
         }
+
+        /* Header */
         header {
             background-color: #007bff;
             color: white;
             padding: 20px;
             text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        section {
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(to right, #007bff, #0056b3);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            border-radius: 0 0 50px 50px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+        .hero img {
+            max-width: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .hero h2 {
+            font-size: 36px;
+            margin: 10px 0;
+        }
+        .hero p {
+            font-size: 18px;
+            margin: 10px 0;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Content Section */
+        .content {
             padding: 20px;
-            margin: 20px;
+            margin: 40px 20px;
             background: white;
-            border-radius: 5px;
+            border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
-        img {
-            max-width: 200px;
-            border-radius: 50%;
-            display: block;
-            margin: 0 auto 20px;
+        .content p {
+            font-size: 18px;
+            margin: 10px 0;
         }
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
+
+        /* Button */
         .boton {
             display: inline-block;
-            padding: 10px 20px;
             margin-top: 20px;
-            font-size: 16px;
+            padding: 15px 30px;
+            font-size: 18px;
             color: white;
             background-color: #007bff;
             border: none;
-            border-radius: 5px;
+            border-radius: 50px;
             cursor: pointer;
             text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
         }
         .boton:hover {
             background-color: #0056b3;
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <h1>Perfil</h1>
+        Portafolio de Carlos Capilla
     </header>
-    <section>
+
+    <!-- Hero Section -->
+    <div class="hero">
         <img src="img/FOTO PERFIL CV.jpg" alt="Foto de Carlos">
         <h2>Hola, soy Carlos</h2>
-        <p>Graduado en Administración y Dirección de Empresas con un máster en Big Data y Data Analytics. Apasionado por la gestión empresarial, los datos y la tecnología.</p>
-        <p>Conecta conmigo en <a href="https://www.linkedin.com/in/tuusuario/" target="_blank">LinkedIn</a>.</p>
+        <p>Graduado en Administración y Dirección de Empresas con un máster en Big Data y Data Analytics.</p>
+        <p>Apasionado por la gestión empresarial, los datos y la tecnología.</p>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+        <p>Puedes conectar conmigo en <a href="https://www.linkedin.com/in/tuusuario/" target="_blank">LinkedIn</a>.</p>
         <a href="index.html" class="boton">Volver a Inicio</a>
-    </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        © 2024 Carlos Capilla - Todos los derechos reservados
+    </footer>
 </body>
 </html>
